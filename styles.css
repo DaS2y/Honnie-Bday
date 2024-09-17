@@ -1,0 +1,13 @@
+/* styles.css */
+@font-face {
+    font-family: 'Tomorrow';
+    src: url('fonts/Tomorrow_Night.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Tomorrow', sans-serif;
+    background-color: #f4f4f4;
+    
+}
