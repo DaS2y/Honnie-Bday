@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사이트 설명</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Tomorrow', sans-serif;
+            background-image: url('image/wrongt.gif'); /* GIF 이미지 URL */
+            background-size: cover; /* 화면 전체에 이미지가 맞도록 설정 */
+            background-repeat: no-repeat; /* 이미지가 반복되지 않도록 설정 */
+            background-attachment: fixed; /* 스크롤 시 배경이 고정되도록 설정 */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .highlight {
+                color: #c7b0c2; /* 원하는 색상으로 변경 */
+                font-weight: bold; /* 선택적: 강조를 위해 굵게 */
+                text-shadow: 
+                1px 1px 0 #000, /* 오른쪽 아래 */
+                -1px -1px 0 #000, /* 왼쪽 위 */
+                1px -1px 0 #000, /* 오른쪽 위 */
+                -1px 1px 0 #000; /* 왼쪽 아래 */
+                font-size: 11px;
+}
+
+        .container {
+            background-image: url('image/wrongb.gif'); /* 이미지 URL */
+            background-size: cover; /* 이미지가 컨테이너 전체를 덮도록 설정 */
+            background-repeat: no-repeat; /* 이미지가 반복되지 않도록 설정 */
+            background-position: center; /* 이미지가 컨테이너의 중앙에 위치하도록 설정 */
+            padding: 20px;
+            border-radius: 15px; /* 모서리를 살짝 둥글게 설정 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 700px;
+            height: 500px;
+        }
+        h1 {
+            color: #fc8787;
+            margin: 20px 0;
+            animation: scale-up-down 1s ease-in-out infinite; /* 커졌다 작아졌다 애니메이션 적용 */
+            font-size: 2em; /* 원하는 폰트 크기로 조정 */
+            text-shadow: 
+                1px 1px 0 #000, /* 오른쪽 아래 */
+                -1px -1px 0 #000, /* 왼쪽 위 */
+                1px -1px 0 #000, /* 오른쪽 위 */
+                -1px 1px 0 #000; /* 왼쪽 아래 */
+
+        }
+        @keyframes scale-up-down {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        p {
+            color: #ffffff;
+            font-size: 11px;
+            text-shadow: 
+                1px 1px 0 #000, /* 오른쪽 아래 */
+                -1px -1px 0 #000, /* 왼쪽 위 */
+                1px -1px 0 #000, /* 오른쪽 위 */
+                -1px 1px 0 #000; /* 왼쪽 아래 */
+        }
+        button {
+            background-image: url('image/Daisy.png');
+            background-size: cover; /* 이미지가 버튼의 전체 영역을 덮도록 설정 */
+            background-repeat: no-repeat; /* 이미지가 반복되지 않도록 설정 */
+            background-color: transparent; /* 배경 색상 제거 */
+            border: none; /* 기본 버튼 테두리 제거 */
+            width: 100px; /* 버튼의 너비 조정 */
+            height: 90px; /* 버튼의 높이 조정 */
+            cursor: pointer; /* 클릭 가능한 포인터 표시 */
+            position: absolute; /* 버튼의 위치를 절대 위치로 설정 */
+            bottom: 10px; /* 컨테이너의 아래에서 10px 떨어진 위치 */
+            right: 10px; /* 컨테이너의 오른쪽에서 10px 떨어진 위치 */
+        }
+        button:hover {
+            opacity: 0.8; /* 이미지 버튼에 호버 효과 추가 */
+        }
+        /* @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px); /* 위로 10px 튀기 */
+      /* }
+    } */ */
+
+    /* 문단 내의 각 단어에 애니메이션 적용 */
+    p span {
+      display: inline-block;
+      animation: bounce 0.5s ease-in-out infinite;
+    }
+
+    /* 각 단어의 애니메이션 시작 시간을 다르게 적용 (순차적으로 튀게) */
+    p span:nth-child(odd) {
+      animation-delay: 0s;
+    }
+    p span:nth-child(even) {
+      animation-delay: 0.25s;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <h1>You Picked DARE!!</h1>
+        <p>Kiss Chloe <3<3</p>
+        <p><span class="highlight">You'll get another hint after this.</span></p>
+
+
+        <button onclick="location.href='file:///Users/chloe/Desktop/%ED%9B%88%EC%9D%B4%EC%83%9D%EC%9D%BC%3C3/1Login.html'"></button>
+    </div>
+</body>
+</html>
